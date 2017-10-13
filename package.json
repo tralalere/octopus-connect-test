@@ -1,0 +1,20 @@
+{
+  "name": "octopus-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "octopus-connect": "0.0.1",
+    "systemjs": "^0.20.19"
+  },
+  "devDependencies": {
+    "typescript": "^2.5.3"
+  }
+}
