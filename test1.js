@@ -14,14 +14,18 @@
      */
     var index_1 = require("octopus-connect/index");
     var connector = new index_1.DataConnector({
-        defaultInterface: "",
+        defaultInterface: "localstorage",
         configuration: {
             localstorage: {
                 prefix: "test"
             }
         }
     });
-    connector.createEntity("endpoint1", { key1: "val1", key2: "val2" });
-    console.log(connector);
+    /*connector.createEntity("endpoint1", {key1: "val1", key2: "val2"}).subscribe((data:DataEntity) => {
+        console.log(data);
+    });*/
+    connector.loadEntity("endpoint1", 2).subscribe(function (data) {
+        console.log(data);
+    });
 });
 //# sourceMappingURL=test1.js.map
